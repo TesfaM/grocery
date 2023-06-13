@@ -74,15 +74,15 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 550px) {
     .carousel-caption h4 {
-        font-size: 18px;
-        font-weight: 500 !important;
+        font-size: 15px;
+        font-weight: 400 !important;
     }
 
     .carousel-caption h1 {
-        font-size: 30px;
-        font-weight: 600 !important;
+        font-size: 25px;
+        font-weight: 500 !important;
     }
 }
 
@@ -100,6 +100,7 @@
 .bg-hero {
     background: url(../img/carousel-1.jpg) top right no-repeat;
     background-size: cover;
+    height: 50vh; /* Adjust the height as per your requirement */
 }
 
 @media (min-width: 991.98px) {
@@ -109,6 +110,21 @@
         z-index: 1;
     }
 }
+
+.carousel-image-container {
+    height: 50vh; /* Adjust the height as per your requirement */
+    overflow: hidden;
+}
+
+.carousel-inner .carousel-item {
+    height: 100%;
+}
+
+.carousel-inner .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
 
 .bg-vegetable {
     background: linear-gradient(rgba(52, 173, 84, .2), rgba(52, 173, 84, .2)), url(../img/vegetable.png) bottom right no-repeat;
@@ -163,18 +179,18 @@
     transition: .5s;
 }
 
-.product-item:hover .btn-action {
+/* .product-item:hover .btn-action {
     bottom: 0;
     opacity: 1;
-}
+} */
 
-.product-item h5 {
+/* .product-item h5 {
     transition: .5s;
-}
+} */
 
-.product-item:hover h5 {
+/* .product-item:hover h5 {
     opacity: 0;
-}
+} */
 
 .product-carousel::after {
     position: absolute;
